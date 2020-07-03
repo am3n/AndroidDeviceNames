@@ -371,10 +371,14 @@ public class DeviceName {
     }
 
     private DeviceInfo(JSONObject jsonObject) throws JSONException {
-      manufacturer = jsonObject.getString("manufacturer");
-      marketName = jsonObject.getString("market_name");
-      codename = jsonObject.getString("codename");
-      model = jsonObject.getString("model");
+      if (jsonObject.has("manufacturer"))
+        manufacturer = jsonObject.getString("manufacturer");
+      if (jsonObject.has("market_name"))
+        marketName = jsonObject.getString("market_name");
+      if (jsonObject.has("codename"))
+        codename = jsonObject.getString("codename");
+      if (jsonObject.has("model"))
+        model = jsonObject.getString("model");
     }
 
     /**
