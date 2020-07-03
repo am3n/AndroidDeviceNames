@@ -3,7 +3,7 @@ buildscript {
   ext.buildConfig = [
       compileSdk              : 29,
       targetSdk               : 29,
-      minSdk                  : 16,
+      minSdk                  : 15,
       buildTools              : '29.0.2',
       gradlePlugin            : '3.5.3'
   ]
@@ -51,6 +51,7 @@ buildscript {
   dependencies {
     classpath 'com.android.tools.build:gradle:3.6.1'
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
   }
 }
 
