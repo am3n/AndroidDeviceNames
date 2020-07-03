@@ -348,16 +348,16 @@ public class DeviceName {
 
     /** Retail branding */
     @Deprecated
-    public final String manufacturer;
+    public String manufacturer;
 
     /** Marketing name */
-    public final String marketName;
+    public String marketName;
 
     /** the value of the system property "ro.product.device" */
-    public final String codename;
+    public String codename;
 
     /** the value of the system property "ro.product.model" */
-    public final String model;
+    public String model;
 
     public DeviceInfo(String marketName, String codename, String model) {
       this(null, marketName, codename, model);
